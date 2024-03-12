@@ -1,7 +1,7 @@
 use('FatecVotorantim')
 const prestador = {
-    "cnpj" : "45190324000149",
-    "razao_social" : "SERVIÇOS MOTOBOY LTDA",
+    "cnpj" : "45190324000150",
+    "razao_social" : "SERVIÇOS MOTOBOY 2 LTDA",
     "cep" : "13310160",
     "endereco" : {
         "logradouro": "Av. Presidente Kennedy, 321",
