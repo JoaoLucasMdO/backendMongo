@@ -1,5 +1,5 @@
 import express from 'express'
-import { connectToDatabase } from '../utils/mongodb'
+import { connectToDatabase } from '../utils/mongodb.js'
 
 const router = express.Router()
 const {db,ObjectId} = await connectToDatabase()

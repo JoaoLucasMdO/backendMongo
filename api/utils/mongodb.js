@@ -54,4 +54,4 @@ export async function connectToDatabase() {
     return cached.conn
 }
 
-export { MONGODB_DB, MONGODB_URI }
+export {MONGODB_DB, MONGODB_URI}
