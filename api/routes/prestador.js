@@ -30,4 +30,26 @@ router.get('/', async(req, res)=>{
     }
 })
 
+
+/**
+ * GET /api/prestadores/id/:id
+ * Lista o prestador de serviço pelo id
+ * Parâmetros: id
+ */
+
+router.get('/id/:id', async (req, res)=>{
+    try{
+        const doc = []
+        await db.collection(nomeCollection)
+            .find({'_id': {$eq: new ObjectId(req.params.id)}},{})
+    }catch(err){
+        res.status(500).json({
+            errors: [{
+                value: `${err.message}`,
+                msg: 'Erro ao obter o prestador pelo ID',
+                param: '/id/:id'
+            }]
+        })
+    }
+})
 export default router
