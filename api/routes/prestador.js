@@ -39,9 +39,13 @@ router.get('/', async(req, res)=>{
 
 router.get('/id/:id', async (req, res)=>{
     try{
-        const doc = []
+        const docs = []
         await db.collection(nomeCollection)
             .find({'_id': {$eq: new ObjectId(req.params.id)}},{})
+            .forEach((doc)=>{
+                docs.push(doc)
+            })
+            res.status(200).json(docs)
     }catch(err){
         res.status(500).json({
             errors: [{
