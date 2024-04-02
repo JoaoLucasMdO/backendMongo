@@ -24,7 +24,6 @@ Content-Type: application/json
 //POST - Insere um novo prestador
 POST {{baseURL}}
 Content-Type: application/json
-
 {
     "cnpj" : "45190324008950",
     "razao_social" : "MARIA ALCINA TRANSPORTES LTDA",
@@ -44,3 +43,32 @@ Content-Type: application/json
         "coordinates": [-23.2904, -47.2963]
     }
 }
+
+###
+//PUT - Altera um prestador já existente
+PUT {{baseURL}}
+Content-Type: application/json
+
+ {
+    "_id": "65efaaedcafdbdcd7d7f0432",
+    "cnpj": "45190324000151",
+    "razao_social": "SERVIÇOS MOTOBOY ALTERADO LTDA",
+    "cep": "13310160",
+    "endereco": {
+      "logradouro": "Av. Presidente Kennedy, 321",
+      "complemento": "",
+      "bairro": "Centro",
+      "localidade": "Votorantim",
+      "uf": "sp"
+    },
+    "cnae_fiscal": 451510,
+    "nome_fantasia": "ZÉ MOTOBOY",
+    "data_inicio_atividade": "2022-07-22",
+    "localizacao": {
+      "type": "Point",
+      "coordinates": [
+        -23.2904,
+        -47.2963
+      ]
+    }
+  }
