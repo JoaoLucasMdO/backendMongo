@@ -16,7 +16,7 @@ app.use('/', express.static('public'))
 app.disable('X-powered-by')
 
 //Configurando o favicon
-app.use('/favicon.ico', express.static('public/images/ControleVideoGame.png'))
+app.use('/favicon.ico', express.static('public/images/ControleLogo.png'))
 
 //Rota default
 app.get('/api', (req, res) => {
