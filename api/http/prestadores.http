@@ -4,11 +4,14 @@
 // GET - Lista todos os prestadores
 GET {{baseURL}}/?limit=3&skip=0
 Content-Type: application/json
+access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImlkIjoiNjYzMDNlNDU5Nzk3NDA3YWYyODk0NmFkIn0sImlhdCI6MTcxNTAzODc0NSwiZXhwIjoxNzE1MTI1MTQ1fQ.mHvO7Q5ay6MI8y0hWEdH_6DleVMJb-kBnFovuE0lHck
+
 
 ### //Separa os GET
 // GET - Lista o prestador pelo ID
-GET {{baseURL}}/id/65ef9662f5c9caf051e59ec6
+GET {{baseURL}}/id/66397238b21b033d45960d94
 Content-Type: application/json
+access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImlkIjoiNjYzMDNlNDU5Nzk3NDA3YWYyODk0NmFkIn0sImlhdCI6MTcxNTAzODc0NSwiZXhwIjoxNzE1MTI1MTQ1fQ.mHvO7Q5ay6MI8y0hWEdH_6DleVMJb-kBnFovuE0lHck
 
 ###
 //GET - Lista o prestador pela razão social ou fantasia
@@ -24,9 +27,11 @@ Content-Type: application/json
 //POST - Insere um novo prestador
 POST {{baseURL}}
 Content-Type: application/json
+access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImlkIjoiNjYzMDNlNDU5Nzk3NDA3YWYyODk0NmFkIn0sImlhdCI6MTcxNTAzODc0NSwiZXhwIjoxNzE1MTI1MTQ1fQ.mHvO7Q5ay6MI8y0hWEdH_6DleVMJb-kBnFovuE0lHck
+
 {
-    "cnpj" : "45190324008950",
-    "razao_social" : "MARIA ALCINA TRANSPORTES LTDA",
+    "cnpj" : "45190324008922",
+    "razao_social" : "JOSÉ BERNARDO TRANSPORTES LTDA",
     "cep" : "13310160",
     "endereco" : {
         "logradouro": "Av. Presidente Kennedy, 321",
