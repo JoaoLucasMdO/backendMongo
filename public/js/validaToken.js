@@ -22,3 +22,13 @@ function parseJwt(token){
         return null
     }
 }
+
+//Captura o botão logout pelo ID
+const btnLogout = document.getElementById('logout')
+//Adicionamos o listener no click
+btnLogout.addEventListener('click', function(){
+    //Removemos o localStorage
+    localStorage.removeItem('token')
+    //Redirecionamos para o login
+    window.location.href = 'index.html'
+})
