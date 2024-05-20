@@ -22,6 +22,16 @@ describe('API REST de Prestadores sem o Token', ()=>{
     it('GET / Obtém o Prestador pelo ID sem o token', async() =>{
         const id = '65efaaedcafdbdcd7d7f0432'
         const response = await request(baseURL)
+        .get(`/prestadores/id/${id}`)
+        .set('Content-Type','application/json')
+        .expect(401)
+    })
 
+    it('GET / Obtém o Prestador pela Razão sem o token', async() =>{
+        const razao = 'SERVIÇOS'
+        const response = await request(baseURL)
+        .get(`/prestadores/id/${razao}`)
+        .set('Content-Type','application/json')
+        .expect(401)
     })
 })
