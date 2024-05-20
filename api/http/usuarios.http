@@ -3,13 +3,14 @@
 @baseURL = http://localhost:4000/api/usuarios
 
 ###
+# @prompt senha
 POST {{baseURL}}
 Content-Type: application/json
 
 {
     "nome": "João Lucas",
     "email": "joaolucas@gmail.com",
-    "senha": "joaoLucas123!"
+    "senha": "{{senha}}"
 }
 
 ###
@@ -19,11 +20,12 @@ Content-Type: application/json
 access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImlkIjoiNjYzMDNlNDU5Nzk3NDA3YWYyODk0NmFkIn0sImlhdCI6MTcxNTAzNzM5NCwiZXhwIjoxNzE1MTIzNzk0fQ.nlsYUmiEHZpK0imF56W6uDA9V7MNezjg3j1GwojAUTA
 
 ###
+# @prompt senha
 //POST - Efetua o login
 POST {{baseURL}}/login
 Content-Type: application/json
 
 {
     "email": "joaolucas@gmail.com",
-    "senha": "joaoLucas123!"
+    "senha": "{{senha}}"
 }
