@@ -38,7 +38,8 @@ async function removePrestador(id) {
         await fetch(` ${urlBase}/prestadores/${id}`, {
             method: 'DELETE',
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'access-token' : access_token
             }
         })
             .then(response => response.json())
@@ -87,7 +88,8 @@ async function salvarPrestador(prestador){
     await fetch(`${urlBase}/prestadores`, {
         method: 'POST',
         headers:{
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            'access-token' : access_token
         },
         body: JSON.stringify(prestador)
     })
